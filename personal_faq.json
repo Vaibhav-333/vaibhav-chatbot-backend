@@ -1,0 +1,128 @@
+[
+  {
+    "question": "Who is Vaibhav Awasthi?",
+    "answer": "Vaibhav Awasthi is a Computer Science and Data Analytics undergraduate student at IIT Patna with a CGPA of 8.26."
+  },
+  {
+    "question": "Where does Vaibhav live?",
+    "answer": "He lives in Kanpur, Uttar Pradesh, India."
+  },
+  {
+    "question": "What are Vaibhav's technical skills?",
+    "answer": "Python, JavaScript, Flask, Streamlit, SQL, Computer Vision, Deep Learning, Power BI, Tableau, and Git."
+  },
+  {
+    "question": "What are Vaibhav's projects?",
+    "answer": "Credit Card Fraud Detection, Sign Language Detection, AI Chatbot on Telegram, Cement Strength Prediction, and an NLP-based Recommendation System."
+  },
+  {
+    "question": "Where has Vaibhav worked?",
+    "answer": "He has interned at Heleum as a Data Science Intern, worked as a Subject Matter Expert at Chegg, and contributed as a content writer for Coursera."
+  },
+  {
+    "question": "What are Vaibhav's achievements?",
+    "answer": "NTSE Scholar, ANTHE Scholar, Event Coordinator at IIT Patna, and a state-level debate winner."
+  },
+  {
+    "question": "What certifications does Vaibhav have?",
+    "answer": "Data Science Masters from PW, AWS Cloud Computing, and Excel for Finance."
+  },
+  {
+    "question": "What extracurricular activities is Vaibhav involved in?",
+    "answer": "He is a member of the Coding Club, Data Science Club, and has led various college events."
+  },
+  {
+    "question": "What are Vaibhav's hobbies?",
+    "answer": "Vaibhav enjoys reading books, playing cricket, and participating in hackathons."
+  },
+  {
+    "question": "What is Vaibhav's educational background?",
+    "answer": "He completed his HSC and SSC from Shivaji Group of Institutions with scores of 80% and 87.8% respectively."
+  },
+  {
+    "question": "What programming languages does Vaibhav use?",
+    "answer": "Python and JavaScript are his primary programming languages."
+  },
+  {
+    "question": "What does Vaibhav want to pursue in the future?",
+    "answer": "He plans to pursue a postgraduate degree abroad in Data Science after graduation."
+  },
+  {
+    "question": "What is Vaibhav Awasthi currently studying?",
+    "answer": "Vaibhav Awasthi is pursuing a B.S. in Computer Science and Data Analytics at IIT Patna, with a current CGPA of 8.26."
+  },
+  {
+    "question": "What are Vaibhav's internship experiences?",
+    "answer": "Vaibhav has interned as a Data Science Intern at Heleum, where he built fraud detection models and performed advanced EDA and feature engineering."
+  },
+  {
+    "question": "What kind of work has Vaibhav done at Chegg?",
+    "answer": "At Chegg, Vaibhav worked as a Subject Matter Expert, delivering over 1000 academic solutions in CS, Data Science, DBMS, ML, and DL domains."
+  },
+  {
+    "question": "What did Vaibhav do at Coursera?",
+    "answer": "At Coursera, Vaibhav served as a Content Writer, contributing high-impact educational content that boosted program popularity and revenue."
+  },
+  {
+    "question": "What is the Credit Card Fraud Detection project?",
+    "answer": "It’s a machine learning project where Vaibhav used Logistic Regression and Random Forest models to detect fraud in imbalanced datasets, with rich EDA and data visualization."
+  },
+  {
+    "question": "What is the Telegram AI Chatbot project?",
+    "answer": "Vaibhav developed a real-time NLP chatbot on Telegram using the Telegram Bot API and OpenAI GPT models, with webhook deployment and secure server hosting."
+  },
+  {
+    "question": "How does Vaibhav's Sign Language Detection project work?",
+    "answer": "It uses Mediapipe and TensorFlow to detect American Sign Language in real-time, achieving over 90% accuracy using CNN models."
+  },
+  {
+    "question": "Which certifications does Vaibhav hold?",
+    "answer": "Vaibhav is certified in Data Science Masters 2.0 (PW), AWS Cloud Computing (EC2, S3, RDS), and Excel Fundamentals for Finance (CFI)."
+  },
+  {
+    "question": "What courses has Vaibhav taken?",
+    "answer": "He has taken courses in Python, JavaScript, HTML, OOPs, MATLAB, SQL, ML, DL, OpenCV, and Data Analysis."
+  },
+  {
+    "question": "What soft skills does Vaibhav possess?",
+    "answer": "He is skilled in communication, presentation, documentation, and team management."
+  },
+  {
+    "question": "What are Vaibhav’s notable achievements?",
+    "answer": "Vaibhav is an NTSE Scholar, ANTHE Scholar, and has led multiple college events like SPANDAN and inter-college sports competitions."
+  },
+  {
+    "question": "What are Vaibhav’s technical skills?",
+    "answer": "His skills include Python, JavaScript, Flask, Streamlit, MySQL, Power BI, Tableau, Git, OpenCV, and TensorFlow."
+  },
+  {
+    "question": "Where did Vaibhav complete his schooling?",
+    "answer": "Vaibhav completed his HSC and SSC from Shivaji Group of Institutions with 80% and 87.8% respectively."
+  },
+  {
+    "question": "What does Vaibhav want to pursue after graduation?",
+    "answer": "Vaibhav plans to pursue a postgraduate degree abroad in Data Science."
+  },
+  {
+    "question": "What is Vaibhav's Github account?",
+    "answer": "Vaibhav's GitHub account is https://github.com/Vaibhav-333."
+  },
+  {
+    "question": "What is Vaibhav's LinkedIn profile?",
+    "answer": "Vaibhav's LinkedIn profile can be found at https://www.linkedin.com/in/vaibhav-awasthi-17."
+  },
+  {
+    "question": "What is Vaibhav's Twitter handle?",
+    "answer": "Vaibhav's Twitter handle is https://x.com/httpsvaibhav."
+  },
+  {
+    "question": "What is Vaibhav's email address?",
+    "answer": "Vaibhav can be reached at www.awasthivaibhav333@gmail.com."
+  },
+
+  {
+    "question": "What is Vaibhav's phone number?",
+    "answer": "Vaibhav's phone number is +91-639-626-3333."
+  }
+]
+

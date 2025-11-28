@@ -27,7 +27,7 @@ CORS(app, origins=["*"])  # Configure CORS for all origins
 # Configuration
 class Config:
     # Gemini API Configuration
-    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8')  # Replace with your actual Gemini API key
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc')  # Replace with your actual Gemini API key
     GEMINI_MODEL = 'gemini-2.5-flash'
     GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
     

@@ -1,128 +1,166 @@
 [
   {
     "question": "Who is Vaibhav Awasthi?",
-    "answer": "Vaibhav Awasthi is a Computer Science and Data Analytics undergraduate student at IIT Patna with a CGPA of 8.26."
+    "answer": "Vaibhav Awasthi is an aspiring Data Scientist and an undergraduate student pursuing a B.S. in Computer Science and Data Analysis at IIT Patna."
   },
   {
-    "question": "Where does Vaibhav live?",
-    "answer": "He lives in Kanpur, Uttar Pradesh, India."
+    "question": "What is Vaibhav Awasthi's professional summary?",
+    "answer": "He is a Computer Science student with hands-on experience in Machine Learning, Deep Learning, and NLP. He has a proven track record in project execution and cross-functional collaboration through various internships and freelance work."
   },
   {
-    "question": "What are Vaibhav's technical skills?",
-    "answer": "Python, JavaScript, Flask, Streamlit, SQL, Computer Vision, Deep Learning, Power BI, Tableau, and Git."
+    "question": "Tell me all his projects.",
+    "answer": "Vaibhav has an extensive portfolio across multiple AI domains. His Machine Learning projects include Credit Card Fraud Detection, Cement Strength Prediction, and a Phishing Classifier[cite: 5, 6, 9, 12]. His NLP projects consist of Speech Emotion Recognition, a Telegram AI Chat Bot, a Movie Recommendation System, and Educational LLM Training using RLHF[cite: 15, 16, 18, 20]. His Computer Vision projects include Sign Language Detection, Car Number Plate Detection, Advanced Image Classification, and a Vision-Based Attendance System[cite: 22, 23, 27, 29, 31]."
   },
   {
-    "question": "What are Vaibhav's projects?",
-    "answer": "Credit Card Fraud Detection, Sign Language Detection, AI Chatbot on Telegram, Cement Strength Prediction, and an NLP-based Recommendation System."
+    "question": "What are Vaibhav's Machine Learning projects?",
+    "answer": "His core Machine Learning projects are Credit Card Fraud Detection, Cement Strength Prediction, and a Phishing Classifier[cite: 5, 6, 9, 12]."
   },
   {
-    "question": "Where has Vaibhav worked?",
-    "answer": "He has interned at Heleum as a Data Science Intern, worked as a Subject Matter Expert at Chegg, and contributed as a content writer for Coursera."
+    "question": "What are Vaibhav's NLP or Natural Language Processing projects?",
+    "answer": "His Natural Language Processing projects include Speech Emotion Recognition, an intelligent Telegram AI Chat Bot, a Movie Recommendation System, and a specialized project on Educational LLM Training using RLHF[cite: 15, 16, 18, 20]."
   },
   {
-    "question": "What are Vaibhav's achievements?",
-    "answer": "NTSE Scholar, ANTHE Scholar, Event Coordinator at IIT Patna, and a state-level debate winner."
+    "question": "What are Vaibhav's Computer Vision projects?",
+    "answer": "Vaibhav's Computer Vision portfolio features real-time Sign Language Detection, Car Number Plate Detection, Image Classification models, and a Vision-Based Attendance System[cite: 22, 23, 27, 29, 31]."
   },
   {
-    "question": "What certifications does Vaibhav have?",
-    "answer": "Data Science Masters from PW, AWS Cloud Computing, and Excel for Finance."
+    "question": "What is the Credit Card Fraud Detection project?",
+    "answer": "Vaibhav built a binary classification model to detect fraudulent transactions using logistic regression and random forest[cite: 6, 7]. He handled imbalanced data using SMOTE and implemented feature scaling and model interpretability[cite: 8]."
   },
   {
-    "question": "What extracurricular activities is Vaibhav involved in?",
-    "answer": "He is a member of the Coding Club, Data Science Club, and has led various college events."
+    "question": "Can you explain the Cement Strength Prediction project?",
+    "answer": "He developed a regression model to predict the compressive strength of concrete using linear regression and ensemble methods[cite: 9, 10]. He successfully integrated this model into a full deployment pipeline using Flask and MongoDB[cite: 11]."
   },
   {
-    "question": "What are Vaibhav's hobbies?",
-    "answer": "Vaibhav enjoys reading books, playing cricket, and participating in hackathons."
+    "question": "How does the Phishing Classifier work?",
+    "answer": "Vaibhav created a phishing website detector based on URL data using Natural Language Processing (NLP) and decision trees[cite: 12, 13]. He extracted relevant features and achieved high classification accuracy on test data[cite: 14]."
+  },
+  {
+    "question": "What is the Speech Emotion Recognition project?",
+    "answer": "In this NLP project, Vaibhav processed audio data to classify human emotions by extracting MFCC features and training LSTM/CNN models on the data[cite: 16, 17]."
+  },
+  {
+    "question": "Can you explain Vaibhav's Telegram AI Chat Bot project?",
+    "answer": "He built an intelligent Telegram bot designed to answer user queries in real-time. It leverages Hugging Face Transformers and OpenAI GPT models to generate natural, conversational responses[cite: 18, 19]. The bot features webhook deployment and secure server hosting."
+  },
+  {
+    "question": "What is the Movie Recommendation System?",
+    "answer": "Vaibhav developed a content-based movie recommender system. It operates by utilizing TF-IDF vectorization and cosine similarity on extensive movie metadata to suggest relevant films[cite: 20, 21]."
+  },
+  {
+    "question": "What is the Sign Language Detection project?",
+    "answer": "It is a real-time hand gesture recognition system implemented using OpenCV and Convolutional Neural Networks (CNNs) to accurately detect American Sign Language alphabets, achieving over 90% classification accuracy[cite: 23, 25, 26]."
+  },
+  {
+    "question": "What did Vaibhav do in the Car Number Plate Detection project?",
+    "answer": "He applied YOLO (You Only Look Once) object detection models to successfully identify and extract car number plates from both static images and video feeds[cite: 27, 28]."
+  },
+  {
+    "question": "Tell me about his Image Classification project.",
+    "answer": "Vaibhav trained deep CNN models on standard datasets like CIFAR-10 and Fashion MNIST[cite: 29, 30]. He optimized the models using advanced data augmentation and transfer learning techniques[cite: 30]."
+  },
+  {
+    "question": "What is the Vision-Based Attendance System?",
+    "answer": "He created an automated facial recognition attendance system[cite: 31, 32]. It utilizes OpenCV and deep face embeddings to detect individuals and seamlessly automate attendance tracking[cite: 32]."
+  },
+  {
+    "question": "What is the 'Educational LLM Training using RLHF' project?",
+    "answer": "It is an advanced AI project where Vaibhav developed a mini RLHF (Reinforcement Learning from Human Feedback) pipeline to improve LLM-generated educational responses using Supervised Fine-Tuning (SFT) and KL-regularized PPO."
   },
   {
     "question": "What is Vaibhav's educational background?",
-    "answer": "He completed his HSC and SSC from Shivaji Group of Institutions with scores of 80% and 87.8% respectively."
-  },
-  {
-    "question": "What programming languages does Vaibhav use?",
-    "answer": "Python and JavaScript are his primary programming languages."
+    "answer": "He is pursuing a B.S. in Computer Science and Data Analysis from IIT Patna (2023-2027) with a current CGPA of 8.43. Previously, he completed his HSC with 80% and SSC with 87.8% from Shivaji Group of Institutions."
   },
   {
     "question": "What does Vaibhav want to pursue in the future?",
     "answer": "He plans to pursue a postgraduate degree abroad in Data Science after graduation."
   },
   {
-    "question": "What is Vaibhav Awasthi currently studying?",
-    "answer": "Vaibhav Awasthi is pursuing a B.S. in Computer Science and Data Analytics at IIT Patna, with a current CGPA of 8.26."
+    "question": "Where has Vaibhav worked or interned?",
+    "answer": "Vaibhav has professional experience as a Data Science Intern at Heleum, an ML Intern at Good Enough Energy, a Subject Matter Expert at Chegg India, and a Content Writer for Coursera."
   },
   {
-    "question": "What are Vaibhav's internship experiences?",
-    "answer": "Vaibhav has interned as a Data Science Intern at Heleum, where he built fraud detection models and performed advanced EDA and feature engineering."
+    "question": "What did Vaibhav do during his internship at Good Enough Energy?",
+    "answer": "As an ML Intern from Feb 2025 to Apr 2025, he gained hands-on experience in end-to-end project execution, focusing on everything from data cleaning to final model deployment while consistently meeting strict deadlines."
   },
   {
-    "question": "What kind of work has Vaibhav done at Chegg?",
-    "answer": "At Chegg, Vaibhav worked as a Subject Matter Expert, delivering over 1000 academic solutions in CS, Data Science, DBMS, ML, and DL domains."
+    "question": "What were Vaibhav's responsibilities at Heleum?",
+    "answer": "As a Data Science Intern (Apr 2025 - Jun 2025), he built and optimized Machine Learning models for fraud detection and predictive analytics. He also conducted extensive data cleaning, EDA, feature engineering, and model evaluation."
   },
   {
-    "question": "What did Vaibhav do at Coursera?",
-    "answer": "At Coursera, Vaibhav served as a Content Writer, contributing high-impact educational content that boosted program popularity and revenue."
+    "question": "What is Vaibhav's role at Chegg (India)?",
+    "answer": "He has been working as a Subject Matter Expert since Nov 2023, delivering over 1000 high-quality academic solutions weekly across CS, Data Science, DBMS, ML, and DL domains. He also spearheaded peer review sessions."
   },
   {
-    "question": "What is the Credit Card Fraud Detection project?",
-    "answer": "It’s a machine learning project where Vaibhav used Logistic Regression and Random Forest models to detect fraud in imbalanced datasets, with rich EDA and data visualization."
+    "question": "What kind of content did Vaibhav write for Coursera?",
+    "answer": "He served as a Content Writer, contributing high-impact educational content that boosted program popularity and revenue."
   },
   {
-    "question": "What is the Telegram AI Chatbot project?",
-    "answer": "Vaibhav developed a real-time NLP chatbot on Telegram using the Telegram Bot API and OpenAI GPT models, with webhook deployment and secure server hosting."
+    "question": "What are Vaibhav's core AI, ML, and Deep Learning skills?",
+    "answer": "He is highly proficient in Python, PyTorch, TensorFlow, Keras, OpenCV, and Scikit-learn."
   },
   {
-    "question": "How does Vaibhav's Sign Language Detection project work?",
-    "answer": "It uses Mediapipe and TensorFlow to detect American Sign Language in real-time, achieving over 90% accuracy using CNN models."
+    "question": "What tools does Vaibhav use for Data Analytics and Engineering?",
+    "answer": "He works extensively with Pandas, Numpy, SQL, MongoDB, PowerBI, Tableau, FastAPI, and Streamlit."
   },
   {
-    "question": "Which certifications does Vaibhav hold?",
-    "answer": "Vaibhav is certified in Data Science Masters 2.0 (PW), AWS Cloud Computing (EC2, S3, RDS), and Excel Fundamentals for Finance (CFI)."
+    "question": "Is Vaibhav experienced with Generative AI technologies?",
+    "answer": "Yes, he has practical experience using Langchain, Hugging Face Transformers, and OpenAI models for generative tasks and conversational AI."
   },
   {
-    "question": "What courses has Vaibhav taken?",
-    "answer": "He has taken courses in Python, JavaScript, HTML, OOPs, MATLAB, SQL, ML, DL, OpenCV, and Data Analysis."
+    "question": "What Cloud and DevOps platforms is Vaibhav familiar with?",
+    "answer": "He has knowledge of AWS, Microsoft Azure, Docker, and Google Cloud."
   },
   {
-    "question": "What soft skills does Vaibhav possess?",
-    "answer": "He is skilled in communication, presentation, documentation, and team management."
+    "question": "What Web Development technologies does Vaibhav know?",
+    "answer": "He builds web applications using HTML, CSS, JavaScript, React, and backend frameworks like Flask and FastAPI."
   },
   {
-    "question": "What are Vaibhav’s notable achievements?",
-    "answer": "Vaibhav is an NTSE Scholar, ANTHE Scholar, and has led multiple college events like SPANDAN and inter-college sports competitions."
+    "question": "What was Vaibhav's rank in the NTSE?",
+    "answer": "Vaibhav is a recognized NTSE Scholar (2020), clearing the prestigious examination and securing a CRL under 500."
   },
   {
-    "question": "What are Vaibhav’s technical skills?",
-    "answer": "His skills include Python, JavaScript, Flask, Streamlit, MySQL, Power BI, Tableau, Git, OpenCV, and TensorFlow."
+    "question": "What leadership roles has Vaibhav taken at IIT Patna?",
+    "answer": "He served as a Team Head, leading 30 volunteers for the Inter-College Sport Competition, and as a Coordinator for SPANDAN, the official college fest at IIT Patna."
   },
   {
-    "question": "Where did Vaibhav complete his schooling?",
-    "answer": "Vaibhav completed his HSC and SSC from Shivaji Group of Institutions with 80% and 87.8% respectively."
+    "question": "Has Vaibhav participated in any debate competitions?",
+    "answer": "Yes, he is a state-level debate winner and has participated in numerous inter-college debates and extempore competitions, winning multiple prizes."
   },
   {
-    "question": "What does Vaibhav want to pursue after graduation?",
-    "answer": "Vaibhav plans to pursue a postgraduate degree abroad in Data Science."
+    "question": "What did Vaibhav accomplish in the Google CloudReady Program?",
+    "answer": "He developed Generative AI applications utilizing Google Cloud Tools, earning recognition and receiving official Google Cloud merchandise for completing the required quests."
   },
   {
-    "question": "What is Vaibhav's Github account?",
-    "answer": "Vaibhav's GitHub account is https://github.com/Vaibhav-333."
+    "question": "What is the Data Science Masters 2.0 certification?",
+    "answer": "It is a comprehensive certification from Physics Wallah where Vaibhav completed a full-cycle program covering Python, ML, SQL, Computer Vision, Deep Learning, and real-world deployments."
+  },
+  {
+    "question": "What extracurricular activities is Vaibhav involved in?",
+    "answer": "He is an active member of the Coding Club and Data Science Club, and frequently organizes and leads various large-scale college events."
+  },
+  {
+    "question": "Does Vaibhav have a personal portfolio website?",
+    "answer": "Yes, his portfolio website can be found at https://vawasthi-data.onrender.com."
+  },
+  {
+    "question": "What is Vaibhav's GitHub account?",
+    "answer": "Vaibhav's GitHub profile is https://github.com/Vaibhav-333[cite: 4], where he hosts all his machine learning, NLP, and web development projects."
   },
   {
     "question": "What is Vaibhav's LinkedIn profile?",
-    "answer": "Vaibhav's LinkedIn profile can be found at https://www.linkedin.com/in/vaibhav-awasthi-17."
+    "answer": "You can connect with Vaibhav professionally on LinkedIn at https://www.linkedin.com/in/vaibhav-awasthi."
   },
   {
-    "question": "What is Vaibhav's Twitter handle?",
-    "answer": "Vaibhav's Twitter handle is https://x.com/httpsvaibhav."
+    "question": "What is the best email address to reach Vaibhav?",
+    "answer": "You can reach Vaibhav professionally at awasthivaibhav@gmail.com [cite: 3] or awasthivaibhav333@gmail.com."
   },
   {
-    "question": "What is Vaibhav's email address?",
-    "answer": "Vaibhav can be reached at www.awasthivaibhav333@gmail.com."
+    "question": "What is Vaibhav's contact number?",
+    "answer": "Vaibhav can be contacted via phone at +91-9151742739[cite: 4]."
   },
-
   {
-    "question": "What is Vaibhav's phone number?",
-    "answer": "Vaibhav's phone number is +91-639-626-3333."
+    "question": "Can you list all of Vaibhav's projects?",
+    "answer": "Vaibhav has built an extensive portfolio across multiple AI and Data Science domains. \n\n🤖 MACHINE LEARNING:\n1. Credit Card Fraud Detection: A binary classification model using logistic regression, random forest, and SMOTE for imbalanced data[cite: 6, 7, 8].\n2. Cement Strength Prediction: A regression model using ensemble methods, fully deployed via Flask and MongoDB[cite: 9, 10, 11].\n3. Phishing Classifier: A website detector using NLP and decision trees on URL data[cite: 12, 13].\n\n🗣️ NATURAL LANGUAGE PROCESSING:\n1. Educational LLM Training: A mini RLHF pipeline improving LLM responses using Supervised Fine-Tuning and PPO.\n2. Telegram AI Chat Bot: An intelligent bot using Hugging Face Transformers and OpenAI GPT for real-time natural responses[cite: 18, 19].\n3. Speech Emotion Recognition: An emotion classifier using audio MFCC features and LSTM/CNN models[cite: 16, 17].\n4. Movie Recommendation System: A content-based recommender using TF-IDF and cosine similarity[cite: 20, 21].\n\n👁️ COMPUTER VISION:\n1. Sign Language Detection: A real-time hand gesture recognition system using OpenCV and CNNs[cite: 23, 25].\n2. Car Number Plate Detection: An object detection project using YOLO to extract plates from images and videos[cite: 27, 28].\n3. Vision-Based Attendance System: An automated tracking system using OpenCV and face embeddings[cite: 31, 32].\n4. Image Classification: CNN models trained on CIFAR-10 and Fashion MNIST using transfer learning and data augmentation[cite: 29, 30]."
   }
 ]
-

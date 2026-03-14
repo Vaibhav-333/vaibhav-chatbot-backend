@@ -6,9 +6,11 @@ import requests
 import os
 import re
 import logging
+import sys
 from typing import Optional, Dict, List, Tuple
 from datetime import datetime
 import time
+from dotenv import load_dotenv
 
 # Configure logging
 logging.basicConfig(
@@ -17,7 +19,8 @@ logging.basicConfig(
     handlers=[
         logging.FileHandler('app.log'),
         logging.StreamHandler()
-    ]
+    ],
+    encoding='utf-8'
 )
 logger = logging.getLogger(__name__)
 
@@ -27,7 +30,7 @@ CORS(app, origins=["*"])  # Configure CORS for all origins
 # Configuration
 class Config:
     # Gemini API Configuration
-    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8')  # Replace with your actual Gemini API key
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc')  # Replace with your actual Gemini API key
     GEMINI_MODEL = 'gemini-2.5-flash'
     GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
     
@@ -133,6 +136,17 @@ class FAQMatcher:
     @staticmethod
     def _keyword_pattern_match(query: str, faq_data: List[Dict]) -> Optional[Dict]:
         """Keyword-based pattern matching"""
+        query_lower = query.lower()
+
+        # 1. HIGH PRIORITY: Catch "All Projects" intent first!
+        if ("all" in query_lower or "list" in query_lower or "what are" in query_lower) and "project" in query_lower:
+            for item in faq_data:
+                # Matches the comprehensive question we added to faq.json
+                if "all" in item['question'].lower() and "project" in item['question'].lower():
+                    logger.info("Found specific match for ALL projects")
+                    return item
+
+        # 2. STANDARD PATTERN MATCHING
         patterns = {
             'identity': ['who is', 'about vaibhav', 'tell me about'],
             'skills': ['skill', 'technical', 'programming', 'technology'],
@@ -145,8 +159,6 @@ class FAQMatcher:
             'future': ['future', 'plan', 'goal', 'pursue'],
             'contact': ['contact', 'email', 'phone', 'github', 'linkedin']
         }
-        
-        query_lower = query.lower()
         
         for pattern_type, keywords in patterns.items():
             if any(keyword in query_lower for keyword in keywords):

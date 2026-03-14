@@ -819,3 +819,449 @@
 2025-11-26 13:19:09,885 - INFO - Requesting Gemini (attempt 1): Taj mahal...
 2025-11-26 13:19:14,515 - INFO - Gemini response received: 959 characters
 2025-11-26 13:19:14,515 - INFO - 127.0.0.1 - - [26/Nov/2025 13:19:14] "POST /chat HTTP/1.1" 200 -
+2025-11-26 22:36:13,682 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 22:36:13,685 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 22:36:14,125 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:15,127 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 22:36:15,380 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:17,382 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 22:36:17,774 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:17,822 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-11-26 22:36:17,825 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 22:36:17,838 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-26 22:36:18,234 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 22:36:18,235 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 22:36:18,511 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:19,512 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 22:36:19,735 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:21,737 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 22:36:22,115 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:22,144 - WARNING -  * Debugger is active!
+2025-11-26 22:36:22,146 - INFO -  * Debugger PIN: 109-734-600
+2025-11-26 22:36:56,038 - INFO - 127.0.0.1 - - [26/Nov/2025 22:36:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-11-26 22:36:56,047 - INFO - Processing query: 'hi'
+2025-11-26 22:36:56,048 - INFO - Searching FAQ for: 'hi'
+2025-11-26 22:36:56,048 - INFO - No FAQ match found
+2025-11-26 22:36:56,048 - INFO - Requesting Gemini (attempt 1): hi...
+2025-11-26 22:36:56,528 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:36:57,531 - INFO - Requesting Gemini (attempt 2): hi...
+2025-11-26 22:36:58,177 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:37:00,178 - INFO - Requesting Gemini (attempt 3): hi...
+2025-11-26 22:37:01,696 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:37:01,697 - INFO - 127.0.0.1 - - [26/Nov/2025 22:37:01] "POST /chat HTTP/1.1" 200 -
+2025-11-26 22:46:54,494 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\mouseinfo\\__init__.py', reloading
+2025-11-26 22:46:54,662 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-26 22:46:55,652 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 22:46:55,659 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 22:46:56,079 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:46:57,081 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 22:46:57,296 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:46:59,309 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 22:46:59,556 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:46:59,714 - WARNING -  * Debugger is active!
+2025-11-26 22:46:59,725 - INFO -  * Debugger PIN: 109-734-600
+2025-11-26 22:47:39,550 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\cwp.py', reloading
+2025-11-26 22:47:39,649 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Scripts\\spyder-script.py', reloading
+2025-11-26 22:47:40,105 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-26 22:47:40,539 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 22:47:40,539 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 22:47:40,790 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:47:41,792 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 22:47:42,190 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:47:44,193 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 22:47:44,392 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 22:47:44,419 - WARNING -  * Debugger is active!
+2025-11-26 22:47:44,424 - INFO -  * Debugger PIN: 109-734-600
+2025-11-26 23:06:53,519 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 23:06:53,523 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 23:06:53,987 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:06:54,988 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 23:06:55,358 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:06:57,363 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 23:06:57,766 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:06:57,817 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-11-26 23:06:57,817 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 23:06:57,835 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-26 23:06:58,301 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 23:06:58,302 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 23:06:58,746 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:06:59,747 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 23:07:00,124 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:02,125 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 23:07:02,390 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:02,412 - WARNING -  * Debugger is active!
+2025-11-26 23:07:02,415 - INFO -  * Debugger PIN: 109-734-600
+2025-11-26 23:07:19,482 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 23:07:19,482 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 23:07:19,854 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:20,857 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 23:07:21,247 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:23,258 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 23:07:23,634 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:23,669 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-11-26 23:07:23,669 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 23:07:23,681 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-26 23:07:24,123 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-26 23:07:24,124 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-26 23:07:24,351 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:25,352 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-26 23:07:25,882 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:27,885 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-26 23:07:28,915 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-26 23:07:28,965 - WARNING -  * Debugger is active!
+2025-11-26 23:07:28,970 - INFO -  * Debugger PIN: 109-734-600
+2025-11-28 21:44:59,644 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-28 21:44:59,648 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-28 21:45:00,479 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-28 21:45:01,480 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-28 21:45:02,146 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-28 21:45:04,151 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-28 21:45:04,800 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-28 21:45:04,864 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.107.248.250:5000
+2025-11-28 21:45:04,864 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 21:45:04,896 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-28 21:45:05,593 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-28 21:45:05,598 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-28 21:45:06,218 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-28 21:45:07,218 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-11-28 21:45:07,528 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-28 21:45:09,529 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-11-28 21:45:10,175 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD7J3dYAq-4Uvo_RTNBDOtnn75Yt1VAZR8
+2025-11-28 21:45:10,217 - WARNING -  * Debugger is active!
+2025-11-28 21:45:10,224 - INFO -  * Debugger PIN: 109-734-600
+2025-11-28 21:57:16,417 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2025-11-28 21:57:16,419 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2025-11-28 21:57:16,817 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-28 21:57:17,581 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-28 21:57:17,585 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-28 21:57:20,290 - INFO - Gemini response received: 132 characters
+2025-11-28 21:57:20,335 - WARNING -  * Debugger is active!
+2025-11-28 21:57:20,338 - INFO -  * Debugger PIN: 109-734-600
+2025-11-28 21:57:39,600 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-28 21:57:39,606 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-28 21:57:42,503 - INFO - Gemini response received: 60 characters
+2025-11-28 21:57:42,559 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-11-28 21:57:42,559 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 21:57:42,579 - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-28 21:57:43,257 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-11-28 21:57:43,262 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-11-28 21:57:45,886 - INFO - Gemini response received: 128 characters
+2025-11-28 21:57:45,919 - WARNING -  * Debugger is active!
+2025-11-28 21:57:45,928 - INFO -  * Debugger PIN: 109-734-600
+2025-11-28 21:58:24,344 - INFO - 127.0.0.1 - - [28/Nov/2025 21:58:24] "OPTIONS /chat HTTP/1.1" 200 -
+2025-11-28 21:58:24,356 - INFO - Processing query: 'Hi'
+2025-11-28 21:58:24,358 - INFO - Searching FAQ for: 'Hi'
+2025-11-28 21:58:24,358 - INFO - No FAQ match found
+2025-11-28 21:58:24,360 - INFO - Requesting Gemini (attempt 1): Hi...
+2025-11-28 21:58:27,865 - INFO - Gemini response received: 32 characters
+2025-11-28 21:58:27,867 - INFO - 127.0.0.1 - - [28/Nov/2025 21:58:27] "POST /chat HTTP/1.1" 200 -
+2025-11-28 21:58:38,371 - INFO - 127.0.0.1 - - [28/Nov/2025 21:58:38] "OPTIONS /chat HTTP/1.1" 200 -
+2025-11-28 21:58:38,373 - INFO - Processing query: 'What are you doing'
+2025-11-28 21:58:38,373 - INFO - Searching FAQ for: 'What are you doing'
+2025-11-28 21:58:38,383 - INFO - No FAQ match found
+2025-11-28 21:58:38,383 - INFO - Query classified as Vaibhav-related (personal): What are you doing
+2025-11-28 21:58:38,383 - INFO - Requesting Gemini (attempt 1): What are you doing...
+2025-11-28 21:58:43,022 - INFO - Gemini response received: 749 characters
+2025-11-28 21:58:43,023 - INFO - 127.0.0.1 - - [28/Nov/2025 21:58:43] "POST /chat HTTP/1.1" 200 -
+2025-12-03 20:01:23,742 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-12-03 20:01:23,744 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-12-03 20:01:26,627 - INFO - Gemini response received: 87 characters
+2025-12-03 20:01:26,699 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-12-03 20:01:26,701 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-03 20:01:26,718 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-03 20:01:27,233 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-12-03 20:01:27,239 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-12-03 20:01:30,011 - INFO - Gemini response received: 93 characters
+2025-12-03 20:01:30,052 - WARNING -  * Debugger is active!
+2025-12-03 20:01:30,056 - INFO -  * Debugger PIN: 109-734-600
+2025-12-04 22:52:57,388 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-12-04 22:52:57,392 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-12-04 22:52:57,838 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2025-12-04 22:52:58,839 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-12-04 22:52:59,230 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2025-12-04 22:53:01,245 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-12-04 22:53:01,623 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2025-12-04 22:53:01,707 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-12-04 22:53:01,707 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 22:53:01,744 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-04 22:53:02,588 - INFO - Loaded 31 FAQ items from personal_faq.json
+2025-12-04 22:53:02,595 - INFO - Requesting Gemini (attempt 1): Test connection...
+2025-12-04 22:53:02,828 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2025-12-04 22:53:03,833 - INFO - Requesting Gemini (attempt 2): Test connection...
+2025-12-04 22:53:04,388 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2025-12-04 22:53:06,393 - INFO - Requesting Gemini (attempt 3): Test connection...
+2025-12-04 22:53:06,836 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2025-12-04 22:53:06,876 - WARNING -  * Debugger is active!
+2025-12-04 22:53:06,882 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:42:14,198 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:42:14,198 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:42:15,808 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:16,811 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:42:17,383 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:19,385 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:42:19,722 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:19,796 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.209.250:5000
+2026-03-14 10:42:19,796 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-14 10:42:19,834 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:42:20,406 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:42:20,422 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:42:20,827 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:21,829 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:42:22,174 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:24,182 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:42:24,556 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:24,593 - WARNING -  * Debugger is active!
+2026-03-14 10:42:24,607 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:42:55,524 - INFO - 127.0.0.1 - - [14/Mar/2026 10:42:55] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:42:55,525 - INFO - Processing query: 'hi'
+2026-03-14 10:42:55,525 - INFO - Searching FAQ for: 'hi'
+2026-03-14 10:42:55,525 - INFO - No FAQ match found
+2026-03-14 10:42:55,525 - INFO - Requesting Gemini (attempt 1): hi...
+2026-03-14 10:42:55,892 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:56,899 - INFO - Requesting Gemini (attempt 2): hi...
+2026-03-14 10:42:57,325 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:42:59,332 - INFO - Requesting Gemini (attempt 3): hi...
+2026-03-14 10:43:00,192 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:43:00,192 - INFO - 127.0.0.1 - - [14/Mar/2026 10:43:00] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:46:48,811 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 10:46:48,816 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 10:46:49,267 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:46:50,010 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:46:50,014 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:46:50,394 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:46:51,400 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:46:51,726 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:46:53,728 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:46:54,132 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:46:54,169 - WARNING -  * Debugger is active!
+2026-03-14 10:46:54,172 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:53:51,690 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\dotenv\\__init__.py', reloading
+2026-03-14 10:53:51,719 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\dotenv\\main.py', reloading
+2026-03-14 10:53:52,363 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:53:52,965 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:53:52,976 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:53:53,556 - ERROR - HTTP Error (attempt 1): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:53:54,559 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:53:54,901 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:53:56,903 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:53:57,226 - ERROR - HTTP Error (attempt 3): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:53:57,266 - WARNING -  * Debugger is active!
+2026-03-14 10:53:57,275 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:54:14,959 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+2026-03-14 10:54:15,026 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+2026-03-14 10:54:15,145 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\_pytest\\capture.py', reloading
+2026-03-14 10:54:15,204 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\_pytest\\doctest.py', reloading
+2026-03-14 10:54:15,261 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\anaconda3\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+2026-03-14 10:54:15,415 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:54:16,087 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:54:16,089 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:54:16,405 - ERROR - HTTP Error (attempt 1): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:54:17,407 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:54:17,755 - ERROR - HTTP Error (attempt 2): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:54:19,762 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:54:20,050 - ERROR - HTTP Error (attempt 3): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:54:20,080 - WARNING -  * Debugger is active!
+2026-03-14 10:54:20,085 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:54:36,363 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 10:54:36,367 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 10:54:37,220 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:54:37,887 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:54:37,892 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:54:38,213 - ERROR - HTTP Error (attempt 1): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:54:39,225 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:54:39,654 - ERROR - HTTP Error (attempt 2): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:54:41,656 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:54:41,999 - ERROR - HTTP Error (attempt 3): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:54:42,022 - WARNING -  * Debugger is active!
+2026-03-14 10:54:42,025 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:55:06,910 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 10:55:06,916 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 10:55:07,192 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:55:07,904 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:55:07,904 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:55:08,215 - ERROR - HTTP Error (attempt 1): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:55:09,223 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:55:09,540 - ERROR - HTTP Error (attempt 2): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:55:11,544 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:55:11,850 - ERROR - HTTP Error (attempt 3): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:55:11,884 - WARNING -  * Debugger is active!
+2026-03-14 10:55:11,884 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:55:28,496 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:55:28,504 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:55:28,796 - ERROR - HTTP Error (attempt 1): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:55:29,809 - INFO - Requesting Gemini (attempt 2): Test connection...
+2026-03-14 10:55:30,131 - ERROR - HTTP Error (attempt 2): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:55:32,134 - INFO - Requesting Gemini (attempt 3): Test connection...
+2026-03-14 10:55:32,448 - ERROR - HTTP Error (attempt 3): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc
+2026-03-14 10:55:32,513 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.209.250:5000
+2026-03-14 10:55:32,513 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-14 10:55:32,532 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 10:55:33,189 - INFO - Loaded 43 FAQ items from personal_faq.json
+2026-03-14 10:55:33,196 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 10:55:36,555 - INFO - Gemini response received: 609 characters
+2026-03-14 10:55:36,585 - WARNING -  * Debugger is active!
+2026-03-14 10:55:36,592 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 10:55:46,405 - INFO - 127.0.0.1 - - [14/Mar/2026 10:55:46] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:55:46,430 - INFO - Processing query: 'hi'
+2026-03-14 10:55:46,431 - INFO - Searching FAQ for: 'hi'
+2026-03-14 10:55:46,432 - INFO - No FAQ match found
+2026-03-14 10:55:46,432 - INFO - Requesting Gemini (attempt 1): hi...
+2026-03-14 10:55:48,818 - INFO - Gemini response received: 32 characters
+2026-03-14 10:55:48,818 - INFO - 127.0.0.1 - - [14/Mar/2026 10:55:48] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:56:04,838 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:04] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:56:04,841 - INFO - Processing query: 'Tell me about vaibhab'
+2026-03-14 10:56:04,841 - INFO - Searching FAQ for: 'Tell me about vaibhab'
+2026-03-14 10:56:04,841 - INFO - Found keyword match (identity): Who is Vaibhav Awasthi?
+2026-03-14 10:56:04,846 - INFO - Returning FAQ answer
+2026-03-14 10:56:04,853 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:04] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:56:18,583 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:18] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:56:18,586 - INFO - Processing query: 'his cgpa'
+2026-03-14 10:56:18,586 - INFO - Searching FAQ for: 'his cgpa'
+2026-03-14 10:56:18,594 - INFO - No FAQ match found
+2026-03-14 10:56:18,594 - INFO - Requesting Gemini (attempt 1): his cgpa...
+2026-03-14 10:56:22,230 - INFO - Gemini response received: 942 characters
+2026-03-14 10:56:22,234 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:22] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:56:40,484 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:40] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:56:40,501 - INFO - Processing query: 'CGPA of vaibhav'
+2026-03-14 10:56:40,501 - INFO - Searching FAQ for: 'CGPA of vaibhav'
+2026-03-14 10:56:40,504 - INFO - No FAQ match found
+2026-03-14 10:56:40,504 - INFO - Query classified as Vaibhav-related (personal): CGPA of vaibhav
+2026-03-14 10:56:40,506 - INFO - Requesting Gemini (attempt 1): CGPA of vaibhav...
+2026-03-14 10:56:41,966 - INFO - Gemini response received: 42 characters
+2026-03-14 10:56:41,966 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:41] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:56:58,502 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:58] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:56:58,516 - INFO - Processing query: 'projects'
+2026-03-14 10:56:58,516 - INFO - Searching FAQ for: 'projects'
+2026-03-14 10:56:58,516 - INFO - Found keyword match (projects): What is the 'Educational LLM Training using RLHF' project?
+2026-03-14 10:56:58,516 - INFO - Returning FAQ answer
+2026-03-14 10:56:58,520 - INFO - 127.0.0.1 - - [14/Mar/2026 10:56:58] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:57:13,504 - INFO - 127.0.0.1 - - [14/Mar/2026 10:57:13] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:57:13,509 - INFO - Processing query: 'His projects?'
+2026-03-14 10:57:13,509 - INFO - Searching FAQ for: 'His projects?'
+2026-03-14 10:57:13,509 - INFO - Found keyword match (projects): What is the 'Educational LLM Training using RLHF' project?
+2026-03-14 10:57:13,509 - INFO - Returning FAQ answer
+2026-03-14 10:57:13,513 - INFO - 127.0.0.1 - - [14/Mar/2026 10:57:13] "POST /chat HTTP/1.1" 200 -
+2026-03-14 10:57:24,903 - INFO - 127.0.0.1 - - [14/Mar/2026 10:57:24] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 10:57:24,916 - INFO - Processing query: 'His all projects'
+2026-03-14 10:57:24,916 - INFO - Searching FAQ for: 'His all projects'
+2026-03-14 10:57:24,918 - INFO - Found keyword match (projects): What is the 'Educational LLM Training using RLHF' project?
+2026-03-14 10:57:24,918 - INFO - Returning FAQ answer
+2026-03-14 10:57:24,920 - INFO - 127.0.0.1 - - [14/Mar/2026 10:57:24] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:11:16,004 - INFO - 127.0.0.1 - - [14/Mar/2026 11:11:16] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:11:16,019 - INFO - Processing query: 'hi'
+2026-03-14 11:11:16,019 - INFO - Searching FAQ for: 'hi'
+2026-03-14 11:11:16,019 - INFO - No FAQ match found
+2026-03-14 11:11:16,019 - INFO - Requesting Gemini (attempt 1): hi...
+2026-03-14 11:11:17,654 - INFO - Gemini response received: 32 characters
+2026-03-14 11:11:17,654 - INFO - 127.0.0.1 - - [14/Mar/2026 11:11:17] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:11:32,296 - INFO - 127.0.0.1 - - [14/Mar/2026 11:11:32] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:11:32,309 - INFO - Processing query: 'Tell me about vaibhav'
+2026-03-14 11:11:32,309 - INFO - Searching FAQ for: 'Tell me about vaibhav'
+2026-03-14 11:11:32,309 - INFO - Found keyword match (identity): Who is Vaibhav Awasthi?
+2026-03-14 11:11:32,309 - INFO - Returning FAQ answer
+2026-03-14 11:11:32,312 - INFO - 127.0.0.1 - - [14/Mar/2026 11:11:32] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:11:45,670 - INFO - 127.0.0.1 - - [14/Mar/2026 11:11:45] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:11:45,678 - INFO - Processing query: 'Tell me all his projects'
+2026-03-14 11:11:45,678 - INFO - Searching FAQ for: 'Tell me all his projects'
+2026-03-14 11:11:45,678 - INFO - Found keyword match (projects): What is the 'Educational LLM Training using RLHF' project?
+2026-03-14 11:11:45,678 - INFO - Returning FAQ answer
+2026-03-14 11:11:45,678 - INFO - 127.0.0.1 - - [14/Mar/2026 11:11:45] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:12:24,031 - INFO - 127.0.0.1 - - [14/Mar/2026 11:12:24] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:12:24,052 - INFO - Processing query: 'His projects?'
+2026-03-14 11:12:24,052 - INFO - Searching FAQ for: 'His projects?'
+2026-03-14 11:12:24,052 - INFO - Found keyword match (projects): What is the 'Educational LLM Training using RLHF' project?
+2026-03-14 11:12:24,052 - INFO - Returning FAQ answer
+2026-03-14 11:12:24,052 - INFO - 127.0.0.1 - - [14/Mar/2026 11:12:24] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:12:50,705 - INFO - 127.0.0.1 - - [14/Mar/2026 11:12:50] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:12:50,718 - INFO - Processing query: 'Tell me all his projects'
+2026-03-14 11:12:50,720 - INFO - Searching FAQ for: 'Tell me all his projects'
+2026-03-14 11:12:50,720 - INFO - Found keyword match (projects): What is the 'Educational LLM Training using RLHF' project?
+2026-03-14 11:12:50,720 - INFO - Returning FAQ answer
+2026-03-14 11:12:50,722 - INFO - 127.0.0.1 - - [14/Mar/2026 11:12:50] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:15:25,353 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 11:15:25,369 - INFO -  * Detected change in 'C:\\Users\\Vaibhav\\OneDrive\\Desktop\\chatbot-backend\\app.py', reloading
+2026-03-14 11:15:26,423 - INFO -  * Restarting with watchdog (windowsapi)
+2026-03-14 11:15:27,286 - INFO - Loaded 41 FAQ items from personal_faq.json
+2026-03-14 11:15:27,289 - INFO - Requesting Gemini (attempt 1): Test connection...
+2026-03-14 11:15:30,171 - INFO - Gemini response received: 95 characters
+2026-03-14 11:15:30,194 - WARNING -  * Debugger is active!
+2026-03-14 11:15:30,198 - INFO -  * Debugger PIN: 109-734-600
+2026-03-14 11:15:47,256 - INFO - 127.0.0.1 - - [14/Mar/2026 11:15:47] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:15:47,263 - INFO - Processing query: 'His projects?'
+2026-03-14 11:15:47,263 - INFO - Searching FAQ for: 'His projects?'
+2026-03-14 11:15:47,265 - INFO - Found keyword match (projects): Tell me all his projects.
+2026-03-14 11:15:47,265 - INFO - Returning FAQ answer
+2026-03-14 11:15:47,265 - INFO - 127.0.0.1 - - [14/Mar/2026 11:15:47] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:16:11,353 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:11] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:16:11,366 - INFO - Processing query: 'Skills?'
+2026-03-14 11:16:11,370 - INFO - Searching FAQ for: 'Skills?'
+2026-03-14 11:16:11,370 - INFO - Found keyword match (skills): What are Vaibhav's core AI, ML, and Deep Learning skills?
+2026-03-14 11:16:11,370 - INFO - Returning FAQ answer
+2026-03-14 11:16:11,372 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:11] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:16:19,237 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:19] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:16:19,245 - INFO - Processing query: 'Tell me about Vaibhav'
+2026-03-14 11:16:19,245 - INFO - Searching FAQ for: 'Tell me about Vaibhav'
+2026-03-14 11:16:19,245 - INFO - Found keyword match (identity): Who is Vaibhav Awasthi?
+2026-03-14 11:16:19,245 - INFO - Returning FAQ answer
+2026-03-14 11:16:19,245 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:19] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:16:36,012 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:36] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:16:36,021 - INFO - Processing query: 'Where is taj mahal'
+2026-03-14 11:16:36,022 - INFO - Searching FAQ for: 'Where is taj mahal'
+2026-03-14 11:16:36,022 - INFO - Found keyword match (location): Where has Vaibhav worked or interned?
+2026-03-14 11:16:36,023 - INFO - Returning FAQ answer
+2026-03-14 11:16:36,025 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:36] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:16:47,010 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:47] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:16:47,023 - INFO - Processing query: 'taj mahal'
+2026-03-14 11:16:47,025 - INFO - Searching FAQ for: 'taj mahal'
+2026-03-14 11:16:47,027 - INFO - No FAQ match found
+2026-03-14 11:16:47,028 - INFO - Requesting Gemini (attempt 1): taj mahal...
+2026-03-14 11:16:53,062 - INFO - Gemini response received: 823 characters
+2026-03-14 11:16:53,062 - INFO - 127.0.0.1 - - [14/Mar/2026 11:16:53] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:17:14,346 - INFO - 127.0.0.1 - - [14/Mar/2026 11:17:14] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:17:14,355 - INFO - Processing query: 'Tum kya kr rahe ho'
+2026-03-14 11:17:14,355 - INFO - Searching FAQ for: 'Tum kya kr rahe ho'
+2026-03-14 11:17:14,357 - INFO - No FAQ match found
+2026-03-14 11:17:14,357 - INFO - Requesting Gemini (attempt 1): Tum kya kr rahe ho...
+2026-03-14 11:17:17,467 - INFO - Gemini response received: 136 characters
+2026-03-14 11:17:17,471 - INFO - 127.0.0.1 - - [14/Mar/2026 11:17:17] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:17:38,224 - INFO - 127.0.0.1 - - [14/Mar/2026 11:17:38] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:17:38,224 - INFO - Processing query: 'Kya tum mujhse baat kar sakte ho'
+2026-03-14 11:17:38,224 - INFO - Searching FAQ for: 'Kya tum mujhse baat kar sakte ho'
+2026-03-14 11:17:38,241 - INFO - No FAQ match found
+2026-03-14 11:17:38,241 - INFO - Requesting Gemini (attempt 1): Kya tum mujhse baat kar sakte ho...
+2026-03-14 11:17:41,190 - INFO - Gemini response received: 262 characters
+2026-03-14 11:17:41,190 - INFO - 127.0.0.1 - - [14/Mar/2026 11:17:41] "POST /chat HTTP/1.1" 200 -
+2026-03-14 11:18:16,324 - INFO - 127.0.0.1 - - [14/Mar/2026 11:18:16] "OPTIONS /chat HTTP/1.1" 200 -
+2026-03-14 11:18:16,328 - INFO - Processing query: 'kya tum mujhe halwe ki recipe bata sakte ho'
+2026-03-14 11:18:16,328 - INFO - Searching FAQ for: 'kya tum mujhe halwe ki recipe bata sakte ho'
+2026-03-14 11:18:16,346 - INFO - No FAQ match found
+2026-03-14 11:18:16,346 - INFO - Requesting Gemini (attempt 1): kya tum mujhe halwe ki recipe bata sakte ho...
+2026-03-14 11:18:23,384 - INFO - Gemini response received: 1100 characters
+2026-03-14 11:18:23,388 - INFO - 127.0.0.1 - - [14/Mar/2026 11:18:23] "POST /chat HTTP/1.1" 200 -

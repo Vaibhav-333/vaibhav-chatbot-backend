@@ -32,14 +32,11 @@ CORS(app, origins=["*"])  # Configure CORS for all origins
 
 # Configuration
 class Config:
-    # Gemini API Configuration
-    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')  # Gets key from .env or Render Environment Variable
-    
-    # 2. FIX: Model version changed to 1.5-flash to avoid 403 errors
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
     GEMINI_MODEL = 'gemini-1.5-flash'
-    GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
+    # Base URL mein key MAT jodiye yahan
+    GEMINI_URL_BASE = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     
-    # 3. FIX: Use absolute path so Render can ALWAYS find personal_faq.json
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     FAQ_FILE = os.path.join(BASE_DIR, 'personal_faq.json')
     
@@ -276,11 +273,11 @@ class GeminiClient:
                 logger.info(f"Requesting Gemini (attempt {attempt + 1}): {query[:50]}...")
                 
                 response = requests.post(
-                    f"{self.base_url}?key={self.api_key}",
-                    json=payload,
-                    headers=headers,
-                    timeout=Config.REQUEST_TIMEOUT
-                )
+    f"{Config.GEMINI_URL_BASE}?key={self.api_key}", # Key yahan judegi
+    json=payload,
+    headers=headers,
+    timeout=Config.REQUEST_TIMEOUT
+)
                 
                 response.raise_for_status()
                 response_data = response.json()
@@ -602,4 +599,6 @@ def initialize_app():
 initialize_app()
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Render PORT environment variable bhejta hai, use pakadne ke liye:
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)

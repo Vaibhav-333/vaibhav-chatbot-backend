@@ -12,13 +12,16 @@ from datetime import datetime
 import time
 from dotenv import load_dotenv
 
+# 1. FIX: Load environment variables sabse pehle (taki API key mil jaye)
+load_dotenv()
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler('app.log'),
-        logging.StreamHandler()
+        logging.StreamHandler(sys.stdout)
     ],
     encoding='utf-8'
 )
@@ -30,12 +33,16 @@ CORS(app, origins=["*"])  # Configure CORS for all origins
 # Configuration
 class Config:
     # Gemini API Configuration
-    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyBYtvnNZ67lWb4LRgBf24vFZq3IOg0yETc')  # Replace with your actual Gemini API key
-    GEMINI_MODEL = 'gemini-2.5-flash'
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')  # Gets key from .env or Render Environment Variable
+    
+    # 2. FIX: Model version changed to 1.5-flash to avoid 403 errors
+    GEMINI_MODEL = 'gemini-1.5-flash'
     GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
     
-    # App Configuration
-    FAQ_FILE = 'personal_faq.json'
+    # 3. FIX: Use absolute path so Render can ALWAYS find personal_faq.json
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    FAQ_FILE = os.path.join(BASE_DIR, 'personal_faq.json')
+    
     REQUEST_TIMEOUT = 30
     MAX_RETRIES = 3
     RATE_LIMIT_DELAY = 1  # seconds between requests
@@ -309,16 +316,17 @@ PERSONAL INFORMATION:
 - Name: Vaibhav Awasthi
 - Location: Kanpur, Uttar Pradesh, India
 - Current Status: B.S. Computer Science and Data Analytics student at IIT Patna
-- CGPA: 8.26/10
+- CGPA: 8.43/10
 - Previous Education: HSC (80%), SSC (87.8%) from Shivaji Group of Institutions
 
 TECHNICAL SKILLS:
-- Programming: Python, JavaScript
-- Web Development: Flask, Streamlit, HTML, CSS
-- Database: SQL, MySQL
+- Programming: Python, JavaScript, PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn
+- Web Development: Flask, Streamlit, FastAPI, HTML, CSS, React
+- Database: SQL, MySQL, MongoDB
 - Data Science & AI: Computer Vision, Deep Learning, Machine Learning, NLP
-- Tools: Power BI, Tableau, Git, OpenCV, TensorFlow, Pandas, NumPy
-- Cloud: AWS (EC2, S3, RDS)
+- Tools: Power BI, Tableau, Git, Pandas, NumPy
+- Cloud: AWS (EC2, S3, RDS), Google Cloud, Docker, Azure
+- Generative AI: Langchain, Hugging Face Transformers, OpenAI
 
 MAJOR PROJECTS:
 1. Credit Card Fraud Detection - ML model using Logistic Regression and Random Forest
@@ -326,28 +334,33 @@ MAJOR PROJECTS:
 3. AI Chatbot on Telegram - NLP integration with OpenAI GPT models
 4. Cement Strength Prediction - Machine learning regression project
 5. NLP-based Recommendation System - Content recommendation using natural language processing
+6. Educational LLM Training using RLHF - Implemented mini RLHF pipeline with SFT and PPO
+7. Car Number Plate Detection - YOLO object detection
+8. Speech Emotion Recognition - LSTM/CNN models on audio data
 
 PROFESSIONAL EXPERIENCE:
-- Data Science Intern at Heleum: Developed fraud detection models, performed EDA, feature engineering
-- Subject Matter Expert at Chegg: Provided 1000+ academic solutions in CS/DS/ML/DL
+- Data Science Intern at Heleum (Apr 2025 - Jun 2025): Developed fraud detection models, performed EDA, feature engineering
+- ML Intern at Good Enough Energy (Feb 2025 - Apr 2025): End-to-end project execution from data cleaning to deployment
+- Subject Matter Expert at Chegg (Nov 2023 - Present): Provided 1000+ academic solutions in CS/DS/ML/DL
 - Content Writer at Coursera: Created educational content for online courses
 
 ACHIEVEMENTS & RECOGNITION:
-- NTSE Scholar (National Talent Search Examination)
-- ANTHE Scholar (Aakash National Talent Hunt Exam)
+- NTSE Scholar (National Talent Search Examination) - CRL under 500
+- ANTHE Scholar (Aakash National Talent Hunt Exam) - Top 5% nationally
 - Event Coordinator at IIT Patna for SPANDAN and sports competitions
 - State-level debate competition winner
 
 CERTIFICATIONS:
 - Data Science Masters 2.0 (Physics Wallah)
+- Google CloudReady Program
 - AWS Cloud Computing Fundamentals
 - Excel Fundamentals for Finance (Corporate Finance Institute)
 
 CONTACT INFORMATION:
-- Email: www.awasthivaibhav333@gmail.com
-- Phone: +91-639-626-3333
+- Email: awasthivaibhav@gmail.com
+- Phone: +91-9151742739
 - GitHub: https://github.com/Vaibhav-333
-- LinkedIn: https://www.linkedin.com/in/vaibhav-awasthi-17
+- LinkedIn: https://www.linkedin.com/in/vaibhav-awasthi
 - Twitter: https://x.com/httpsvaibhav
 
 FUTURE ASPIRATIONS:
@@ -394,24 +407,26 @@ Question: {query}"""
 
 def load_faq_data() -> List[Dict]:
     """Load FAQ data with comprehensive error handling"""
+    logger.info(f"Attempting to load FAQ from: {Config.FAQ_FILE}")
     try:
         if os.path.exists(Config.FAQ_FILE):
             with open(Config.FAQ_FILE, "r", encoding='utf-8') as f:
                 data = json.load(f)
-            logger.info(f"Loaded {len(data)} FAQ items from {Config.FAQ_FILE}")
+            logger.info(f"Loaded {len(data)} FAQ items successfully!")
             return data
         else:
+            logger.error(f"CRITICAL ERROR: FAQ file not found at {Config.FAQ_FILE}")
             # Fallback data
             fallback_data = [
-                {"question": "Who is Vaibhav Awasthi?", "answer": "Vaibhav Awasthi is a Computer Science and Data Analytics undergraduate student at IIT Patna with a CGPA of 8.26. He is from Kanpur, Uttar Pradesh, India."},
+                {"question": "Who is Vaibhav Awasthi?", "answer": "Vaibhav Awasthi is a Computer Science and Data Analytics undergraduate student at IIT Patna with a CGPA of 8.43. He is from Kanpur, Uttar Pradesh, India."},
                 {"question": "What are Vaibhav's technical skills?", "answer": "Vaibhav is skilled in Python, JavaScript, Flask, Streamlit, SQL, Computer Vision, Deep Learning, Power BI, Tableau, and Git. He also has experience with AWS cloud services."},
                 {"question": "What are Vaibhav's major projects?", "answer": "His major projects include Credit Card Fraud Detection using ML, Sign Language Detection with 90%+ accuracy, AI Chatbot on Telegram, Cement Strength Prediction, and an NLP-based Recommendation System."},
                 {"question": "Where has Vaibhav worked?", "answer": "Vaibhav has worked as a Data Science Intern at Heleum, Subject Matter Expert at Chegg (providing 1000+ solutions), and Content Writer at Coursera."},
                 {"question": "What are Vaibhav's achievements?", "answer": "He is an NTSE Scholar, ANTHE Scholar, Event Coordinator at IIT Patna, and a state-level debate winner."},
                 {"question": "What certifications does Vaibhav have?", "answer": "He has certifications in Data Science Masters from Physics Wallah, AWS Cloud Computing, and Excel for Finance from CFI."},
-                {"question": "What is Vaibhav's educational background?", "answer": "He is currently pursuing B.S. in Computer Science and Data Analytics at IIT Patna with 8.26 CGPA. He completed HSC (80%) and SSC (87.8%) from Shivaji Group of Institutions."},
+                {"question": "What is Vaibhav's educational background?", "answer": "He is currently pursuing B.S. in Computer Science and Data Analytics at IIT Patna with 8.43 CGPA. He completed HSC (80%) and SSC (87.8%) from Shivaji Group of Institutions."},
                 {"question": "What are Vaibhav's future plans?", "answer": "Vaibhav plans to pursue a postgraduate degree abroad in Data Science after graduation."},
-                {"question": "How to contact Vaibhav?", "answer": "Email: www.awasthivaibhav333@gmail.com, Phone: +91-639-626-3333, GitHub: https://github.com/Vaibhav-333, LinkedIn: https://www.linkedin.com/in/vaibhav-awasthi-17"}
+                {"question": "How to contact Vaibhav?", "answer": "Email: awasthivaibhav@gmail.com, Phone: +91-9151742739, GitHub: https://github.com/Vaibhav-333, LinkedIn: https://www.linkedin.com/in/vaibhav-awasthi"}
             ]
             
             logger.info(f"Using fallback FAQ data with {len(fallback_data)} items")
@@ -510,7 +525,7 @@ def get_stats():
         "faq_statistics": {
             "total_items": len(faq_data),
             "topics": faq_topics,
-            "sample_questions": [item["question"] for item in faq_data[:5]]
+            "sample_questions": [item["question"] for item in faq_data[:5]] if faq_data else []
         },
         "configuration": {
             "gemini_model": Config.GEMINI_MODEL,
@@ -573,8 +588,11 @@ def initialize_app():
     
     # Test Gemini connection
     try:
-        test_response = gemini_client.generate_response("Test connection", False)
-        logger.info("🤖 Gemini API connection successful")
+        if Config.GEMINI_API_KEY:
+            test_response = gemini_client.generate_response("Test connection", False)
+            logger.info("🤖 Gemini API connection successful")
+        else:
+            logger.warning("🚨 No Gemini API key found in environment!")
     except Exception as e:
         logger.warning(f"🚨 Gemini API connection issue: {e}")
     

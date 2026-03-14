@@ -599,6 +599,7 @@ def initialize_app():
     logger.info("✅ Application initialized successfully")
     logger.info("💡 Ready to handle personal FAQ and general queries")
 
+initialize_app()
+
 if __name__ == "__main__":
-    initialize_app()
     app.run(debug=True, host='0.0.0.0', port=5000)

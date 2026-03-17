@@ -28,8 +28,8 @@ CORS(app, origins=["*"])
 
 class Config:
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-    # gemini-1.5-flash has higher free tier RPM than gemini-2.0-flash
-    GEMINI_MODEL = 'gemini-1.5-flash'
+    # gemini-1.5-flash-latest has higher free tier RPM than gemini-2.0-flash
+    GEMINI_MODEL = 'gemini-1.5-flash-latest'
     GEMINI_BASE_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     FAQ_FILE = os.path.join(BASE_DIR, 'personal_faq.json')

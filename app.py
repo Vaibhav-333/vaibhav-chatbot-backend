@@ -28,15 +28,13 @@ CORS(app, origins=["*"])
 
 class Config:
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-    GEMINI_MODEL = 'gemini-1.5-flash'
+    # Updated to gemini-2.0-flash (gemini-1.5-flash may be unavailable)
+    GEMINI_MODEL = 'gemini-2.0-flash'
     GEMINI_BASE_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
-
-    # FIX 1: __file__ instead of __name__
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     FAQ_FILE = os.path.join(BASE_DIR, 'personal_faq.json')
-
     REQUEST_TIMEOUT = 30
-    MAX_RETRIES = 3
+    MAX_RETRIES = 2
     RATE_LIMIT_DELAY = 1
 
 faq_data = []
@@ -83,12 +81,10 @@ class FAQMatcher:
     def find_best_match(query: str, faq_data: List[Dict]) -> Optional[Dict]:
         if not faq_data or not query: return None
         query_lower = query.lower()
-
         if "project" in query_lower and ("all" in query_lower or "list" in query_lower):
             for item in faq_data:
                 if "all" in item['question'].lower() and "project" in item['question'].lower():
                     return item
-
         best_match = None
         best_score = 0
         for item in faq_data:
@@ -104,9 +100,8 @@ class GeminiClient:
         self.api_key = api_key
 
     def generate_response(self, query: str, is_vaibhav_related: bool = False) -> str:
-        # FIX 2: Check if API key exists before attempting call
         if not self.api_key:
-            logger.error("GEMINI_API_KEY is not set! Check your Render environment variables.")
+            logger.error("GEMINI_API_KEY is not set!")
             return "My AI brain isn't configured yet. Please contact Vaibhav directly at awasthivaibhav333@gmail.com"
 
         global last_request_time
@@ -123,21 +118,30 @@ class GeminiClient:
             try:
                 response = requests.post(target_url, json=payload, timeout=Config.REQUEST_TIMEOUT)
 
-                # FIX 3: Log the actual error from Gemini instead of swallowing it
+                # Log FULL response body so we can see exact Gemini error in Render logs
                 if not response.ok:
-                    logger.error(f"Gemini API error {response.status_code}: {response.text}")
-                    response.raise_for_status()
+                    logger.error(f"Gemini HTTP {response.status_code} on attempt {attempt+1}: {response.text[:500]}")
+                    if attempt == Config.MAX_RETRIES - 1:
+                        # Return the actual status code in the message for easier debugging
+                        return f"Gemini API error {response.status_code}. Check Render logs for details."
+                    time.sleep(2)
+                    continue
 
-                return response.json()['candidates'][0]['content']['parts'][0]['text'].strip()
+                resp_json = response.json()
+                logger.info(f"Gemini success: {str(resp_json)[:100]}")
+                return resp_json['candidates'][0]['content']['parts'][0]['text'].strip()
 
             except requests.exceptions.Timeout:
                 logger.error(f"Gemini timeout on attempt {attempt + 1}")
                 if attempt == Config.MAX_RETRIES - 1:
-                    return "Request timed out. Please try again in a moment!"
+                    return "Request timed out. Please try again!"
+            except KeyError as e:
+                logger.error(f"Unexpected Gemini response structure: {e} | Full: {response.text[:300]}")
+                return "Got an unexpected response from AI. Please try again!"
             except Exception as e:
-                logger.error(f"Gemini Attempt {attempt + 1} failed: {e}")
+                logger.error(f"Gemini attempt {attempt + 1} exception: {type(e).__name__}: {e}")
                 if attempt == Config.MAX_RETRIES - 1:
-                    return "I'm having trouble connecting right now. Please try again or contact Vaibhav directly!"
+                    return "I'm having trouble connecting right now. Please try again!"
                 time.sleep(2)
 
         return "Sorry, I can't answer right now."
@@ -163,7 +167,7 @@ def load_faq_data() -> List[Dict]:
         if os.path.exists(Config.FAQ_FILE):
             with open(Config.FAQ_FILE, "r", encoding='utf-8') as f:
                 data = json.load(f)
-                logger.info(f"Successfully loaded {len(data)} FAQ items from {Config.FAQ_FILE}")
+                logger.info(f"Loaded {len(data)} FAQ items from {Config.FAQ_FILE}")
                 return data
         else:
             logger.warning(f"FAQ file not found at: {Config.FAQ_FILE}")
@@ -172,7 +176,6 @@ def load_faq_data() -> List[Dict]:
     return []
 
 
-# Initialize
 gemini_client = GeminiClient(Config.GEMINI_API_KEY)
 
 
@@ -182,18 +185,15 @@ def chat():
         data = request.get_json()
         if not data:
             return jsonify({"error": "No JSON body"}), 400
-
         user_input = data.get("message", "").strip()
         if not user_input:
             return jsonify({"error": "Empty message"}), 400
 
-        # FAQ first
         faq_match = FAQMatcher.find_best_match(user_input, faq_data)
         if faq_match:
-            logger.info(f"FAQ match found for: {user_input[:50]}")
+            logger.info(f"FAQ match for: {user_input[:50]}")
             return jsonify({"reply": faq_match["answer"], "source": "faq"})
 
-        # Gemini second
         is_vaibhav = FAQMatcher.is_vaibhav_related(user_input)
         reply = gemini_client.generate_response(user_input, is_vaibhav)
         return jsonify({"reply": reply, "source": "gemini"})
@@ -208,19 +208,40 @@ def health_check():
     return jsonify({
         "status": "healthy",
         "faq_items": len(faq_data),
-        # FIX 4: Don't expose whether key exists in public endpoint
         "gemini_ready": bool(Config.GEMINI_API_KEY),
-        "faq_path": Config.FAQ_FILE
+        "model": Config.GEMINI_MODEL
     })
+
+
+# TEMPORARY DEBUG ROUTE - remove after confirming chatbot works
+@app.route("/debug-gemini", methods=["GET"])
+def debug_gemini():
+    """Hit this URL in browser to test Gemini connection directly."""
+    if not Config.GEMINI_API_KEY:
+        return jsonify({"error": "GEMINI_API_KEY not set in environment"})
+    
+    test_payload = {"contents": [{"parts": [{"text": "Say hello in one sentence."}]}]}
+    target_url = f"{Config.GEMINI_BASE_URL}?key={Config.GEMINI_API_KEY}"
+    
+    try:
+        response = requests.post(target_url, json=test_payload, timeout=15)
+        return jsonify({
+            "status_code": response.status_code,
+            "model": Config.GEMINI_MODEL,
+            "url_used": Config.GEMINI_BASE_URL,
+            "response_preview": response.text[:500]
+        })
+    except Exception as e:
+        return jsonify({"error": str(e), "model": Config.GEMINI_MODEL})
 
 
 def initialize_app():
     global faq_data
     faq_data = load_faq_data()
     if not Config.GEMINI_API_KEY:
-        logger.warning("⚠️  GEMINI_API_KEY is not set! Set it in Render dashboard → Environment tab.")
+        logger.warning("GEMINI_API_KEY is not set! Add it in Render dashboard -> Environment.")
     else:
-        logger.info("✅ Gemini API key loaded successfully.")
+        logger.info(f"Gemini API key loaded. Model: {Config.GEMINI_MODEL}")
 
 
 initialize_app()
